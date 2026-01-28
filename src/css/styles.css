@@ -880,7 +880,7 @@ main section {
 }
 
 .pages h1 {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
   margin-bottom: 30px;
   line-height: 1.1;
   background: linear-gradient(to right, #fff, var(--primary));
@@ -1036,4 +1036,85 @@ main section {
   justify-content: center;
   font-size: 0.8rem;
   font-weight: 700;
+}
+/* --- СТИЛИ СТРАНИЦЫ КОНТАКТОВ --- */
+.contact-page__header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.contact-card {
+  background: var(--bg-card);
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card__icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.contact-card__icon i {
+  width: 32px;
+  height: 32px;
+}
+
+.contact-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+.contact-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.contact-card__link {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+  transition: var(--transition);
+}
+
+.contact-card__link:hover {
+  color: var(--primary);
+}
+
+.contact-info-box {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(45, 212, 191, 0.05) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 32px;
+  padding: 50px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contact-info-box { padding: 30px; }
 }

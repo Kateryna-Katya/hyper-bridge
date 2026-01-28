@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Hyper Bridge</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 22c0 0 4-10 12-10s12 10 12 10' stroke='%236366f1' stroke-width='3' stroke-linecap='round' fill='none'/%3E%3Cpath d='M8 18c0 0 4-4 8-4s8 4 8 4' stroke='%232dd4bf' stroke-width='3' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="legal-page">
+    <load
+      src="./partials/header.html"
+/>
+
+<main>
+  <section class="pages">
+      <div class="container">
+          <div class="contact-page__header">
+              <span class="about__tag">На связи</span>
+              <h1>Наши контакты</h1>
+              <p class="pages__intro">Мы всегда открыты для предложений и готовы помочь вам в достижении карьерных целей. Выберите удобный способ связи с нашими экспертами в Лондоне.</p>
+          </div>
+
+          <div class="contact-grid">
+              <div class="contact-card">
+                  <div class="contact-card__icon">
+                      <i data-lucide="phone-call"></i>
+                  </div>
+                  <h3>Телефон</h3>
+                  <p>Для звонков из Англии и других стран</p>
+                  <a href="tel:+442044972544" class="contact-card__link">+44 20 4497 2544</a>
+              </div>
+
+              <div class="contact-card">
+                  <div class="contact-card__icon">
+                      <i data-lucide="mail"></i>
+                  </div>
+                  <h3>Электронная почта</h3>
+                  <p>Для общих вопросов и предложений</p>
+                  <a href="mailto:hello@hyper-bridge.blog" class="contact-card__link">hello@hyper-bridge.blog</a>
+              </div>
+
+              <div class="contact-card">
+                  <div class="contact-card__icon">
+                      <i data-lucide="map-pin"></i>
+                  </div>
+                  <h3>Офис в Лондоне</h3>
+                  <p>25 Old Broad St, London</p>
+                  <span class="contact-card__link">EC2N 1HQ, United Kingdom</span>
+              </div>
+          </div>
+
+          <div class="contact-info-box">
+              <div class="contact-info-box__content">
+                  <h2>Режим работы</h2>
+                  <p>Наша экспертная поддержка доступна в рабочее время по Лондону (GMT/BST):</p>
+                  <ul class="pages__list">
+                      <li>Понедельник — Пятница: 09:00 – 18:00</li>
+                      <li>Суббота — Воскресенье: Выходной</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+</main>
+
+    <load src="./partials/footer.html" />
+    <div id="cookie-popup" class="cookie-popup">
+      <p class="cookie-popup__text">Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+      <button id="cookie-accept" class="btn btn--primary btn--small">Принять</button>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
